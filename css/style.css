@@ -32,12 +32,28 @@
     color: white;
 }
 li{
+    padding: .7rem;
     list-style: none;
-    color: red;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+    font-weight: 800;
+    border: 1px solid black;
+    border-radius: 50%;
 }
 ol{
     display: flex;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
+}
+.bg-magenta{
+    background-color: magenta;
 }
