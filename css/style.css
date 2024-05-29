@@ -31,3 +31,13 @@
     text-align: right;
     color: white;
 }
+li{
+    list-style: none;
+    color: red;
+}
+ol{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}

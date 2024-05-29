@@ -49,6 +49,21 @@ createApp({
             } else{
                 return this.x += 1;
             }
-        }
+        },
+        image1: function () {
+            return this.x = 0;
+        },
+        image2: function () {
+            return this.x = 1;
+        },
+        image3: function () {
+            return this.x = 2;
+        },
+        image4: function () {
+            return this.x = 3;
+        },
+        image5: function () {
+            return this.x = 4;
+        },
     }
 }).mount('#app')

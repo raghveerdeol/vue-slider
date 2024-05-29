@@ -15,12 +15,20 @@
         <div class="container">
             <button @click="down" id="down">down</button>
             <div v-for="(slide, index) in slides" class="slider-wrapper" tabindex="0">
-                <div v-if="index === x" class="item">                        <img :src="slide.image" alt="Spiderman" />
+                <div v-if="index === x" class="item">                        
+                    <img :src="slide.image" alt="Spiderman" />
                     <div class="text">
                         <h3>{{slide.title}}</h3>
                         <p>
                             {{slide.text}}
                         </p>
+                        <ol class="flex">
+                            <li @click="image1">1</li>
+                            <li @click="image2">2</li>
+                            <li @click="image3">3</li>
+                            <li @click="image4">4</li>
+                            <li @click="image5">5</li>
+                        </ol>
                     </div>
                 </div>
             </div>
