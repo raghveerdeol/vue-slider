@@ -57,3 +57,16 @@ ol{
 .bg-magenta{
     background-color: magenta;
 }
+button{
+    padding: .7rem 2rem;
+    background-color: rgb(145, 82, 5);
+    border-radius: 2rem;
+}
+#down{
+    position: absolute;
+    left: 50px;
+}
+#up{
+    position: absolute;
+    right: 50px;
+}

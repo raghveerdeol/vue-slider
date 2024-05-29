@@ -38,32 +38,32 @@ createApp({
     methods: {
         down: function () {
             if (this.x <= 0) {
-                return this.x = 4;
+                this.x = this.slides.length - 1;
             } else{
-                return this.x -= 1;
+                this.x --;
             }
         },
         up: function () {
-            if (this.x >= 4) {
-                return this.x = 0;
+            if (this.x >= this.slides.length - 1) {
+                this.x = 0;
             } else{
-                return this.x += 1;
+                this.x ++;
             }
         },
         image1: function () {
-            return this.x = 0;
+            this.x = ;
         },
-        image2: function () {
-            return this.x = 1;
-        },
-        image3: function () {
-            return this.x = 2;
-        },
-        image4: function () {
-            return this.x = 3;
-        },
-        image5: function () {
-            return this.x = 4;
-        },
+        // image2: function () {
+        //     return this.x = 1;
+        // },
+        // image3: function () {
+        //     return this.x = 2;
+        // },
+        // image4: function () {
+        //     return this.x = 3;
+        // },
+        // image5: function () {
+        //     return this.x = 4;
+        // },
     }
 }).mount('#app')

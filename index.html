@@ -23,11 +23,11 @@
                             {{slide.text}}
                         </p>
                         <ol class="flex">
-                            <li @click="image1" :class="x === 0 ? 'bg-magenta' : ''">1</li>
-                            <li @click="image2" :class="x === 1 ? 'bg-magenta' : ''">2</li>
+                            <li v-for="(slides, index) in slides" @click="image1" :class="x === index ? 'bg-magenta' : ''">{{index + 1}}</li>
+                            <!-- <li @click="image2" :class="x === 1 ? 'bg-magenta' : ''">2</li>
                             <li @click="image3" :class="x === 2 ? 'bg-magenta' : ''">3</li>
                             <li @click="image4" :class="x === 3 ? 'bg-magenta' : ''">4</li>
-                            <li @click="image5" :class="x === 4 ? 'bg-magenta' : ''">5</li>
+                            <li @click="image5" :class="x === 4 ? 'bg-magenta' : ''">5</li> -->
                         </ol>
                     </div>
                 </div>
