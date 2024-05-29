@@ -1,7 +1,4 @@
 
-
-
-
 const { createApp } = Vue
 
 
@@ -50,20 +47,5 @@ createApp({
                 this.x ++;
             }
         },
-        image1: function () {
-            this.x = ;
-        },
-        // image2: function () {
-        //     return this.x = 1;
-        // },
-        // image3: function () {
-        //     return this.x = 2;
-        // },
-        // image4: function () {
-        //     return this.x = 3;
-        // },
-        // image5: function () {
-        //     return this.x = 4;
-        // },
     }
 }).mount('#app')
