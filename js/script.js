@@ -32,5 +32,13 @@ createApp({
                     }
                 ]
         }
+    },
+    methods: {
+        down: function () {
+            return index -= 1;
+        },
+        up: function () {
+            return index += 1;
+        }
     }
 }).mount('#app')
