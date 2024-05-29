@@ -13,10 +13,10 @@
 <body>
     <div id="app">
         <div class="container">
+            <button @click="down" id="down">down</button>
             <div class="slider-wrapper" tabindex="0">
-                <button @click="down" id="down">down</button>
                 <div v-for="(slide, index) in slides" class="item">
-                    <div v-if="index === index">
+                    <div v-if="index === x">
                         <img :src="slide.image" alt="Spiderman" />
                         <div class="text">
                             <h3>{{slide.title}}</h3>
@@ -26,8 +26,8 @@
                         </div>
                     </div>
                 </div>
-                <button @click="up" id="up">up</button>
             </div>
+            <button @click="up" id="up">up</button>
         </div>
 
     </div>
